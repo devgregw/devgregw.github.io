@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merge DNOW 2015</title>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  html, body {
+    height: inherit;
+    width: inherit;
+  }
+
+  body {
+    background: url("images/landing.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%
+  }
+
+  body, h1, h2, h3, p {
+    font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+  }
+
+  a, h1, h2 {
+    color: white;
+  }
+
+  h2, h3 {
+    font-weight: 300;
+    margin: 0 0 20px 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+  }
+
+  .social {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+  }
+
+  .dnow {
+    width: 55%;
+    height: 55%;
+  }
+  </style>
+  <script type="text/javascript">
+  var hashtag = "mergeonpoint";
+  function greg() {
+    window.open("http://www.devgregw.com");
+  }
+  function pantego() {
+    window.open("http://www.pantego.org");
+  }
+  function facebook() {
+    window.open("https://www.facebook.com/search/top/?q=%23" + hashtag);
+  }
+  function instagram() {
+    window.open("https://instagram.com/explore/tags/" + hashtag);
+  }
+  function twitter() {
+    window.open("https://twitter.com/search?q=%23" + hashtag + "&src=typd");
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <img class="dnow" src="images/dnow2.png"/>
+    </div>
+    <!--<a href="mainmenu.php"><h1><strong>DNOW Group Videos</strong></h1></a>
+    <a href="images/image1.JPG"><h1>Decision Making 101</h1></a>
+    <a href="resources.html"><h1>DNOW Resources</h1></a>
+    <a href="livefeed.html"><h1>Share Your DNOW Experiences</h1></a>
+    <div style="height: 1px; background-color: #ddd"></div>-->
+    <div class="navbar navbar-fixed-bottom" style="text-align: center; align-content: center; margin-bottom: 5px;">
+      <table style="margin-bottom: 5px">
+        <tbody>
+          <tr>
+            <div>
+              <img class="social" onclick="facebook()" src="images/facebook.png">
+              <img class="social" onclick="twitter()" src="images/twitter.gif">
+              <img class="social" onclick="instagram()" src="images/instagram.jpg">
+            </div>
+          </tr>
+        </tbody>
+      </table>
+      <img src="images/devgr.png" style="width: 50px; height: 50px;"/>
+      <p>Designed and developed by <a style="cursor: pointer;" onclick="greg()">Greg Whatley</a> for <a style="cursor: pointer;" onclick="pantego()">Pantego Bible Church</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
