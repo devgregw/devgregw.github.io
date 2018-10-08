@@ -39,4 +39,4 @@ To aid in app analytics, the app will send the following information to Firebase
 - Interest categories
 - Country or region
 - Gender
-Age group
+- Age group
