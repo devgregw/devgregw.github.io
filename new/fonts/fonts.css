@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "-dgw-blk";
+    src: url('AvenirLTStd-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "-dgw-bk";
+    src: url('AvenirLTStd-Book.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "-dgw-rmn";
+    src: url('AvenirLTStd-Roman.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "-dgw-clr";
+    src: url('lineto-circular-book.ttf') format("truetype");
+}
