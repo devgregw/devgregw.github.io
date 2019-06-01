@@ -8,16 +8,24 @@
     type="text/css">
   <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
   <link rel="stylesheet" href="theme.css" type="text/css">
-  
-  
+
+
   <title>Greg Whatley</title>
 </head>
 
 <body>
   <div class="dgw-nav fixed-top">
-    <h1>Greg Whatley</h1>
+    <h1 class="dgw-nav-name">Greg Whatley</h1>
+    <h1 class="dgw-nav-code fixed-top">
+      <code>
+        <span style="color:#c678dd">var</span>
+        <span style="color:#61aad7">greeting</span>
+        <span style="color:#abb2bf">=</span>
+        <span style="color:#98c379">"Hello, world!"</span>
+      </code>
+    </h1>
   </div>
-  
+
   <div class="text-center">
     <div class="dgw-intro">
       <div class="row">
@@ -69,8 +77,10 @@
               Church</a>, which had just launched. &nbsp;I've developed mobile apps for both of these churches&mdash;<a
               href="#portfolio">check out my portfolio</a> to learn more. &nbsp;Also in 2018, I began a student worker
             position at the IT division of the <a href="https://police.uta.edu" target="_blank"
-              rel="noopener noreferrer">The University of Texas at Arlington police department</a>. &nbsp;My primary
-            responsibilities are responding to help desk tickets and maintaining computers.</p>
+              rel="noopener noreferrer">The University of Texas at Arlington police department</a>. &nbsp;I have since
+            been transfered to IT for <a href="https://www.uta.edu/campus-ops/" target="_blank">Administration and
+              Campus Operations</a>; however, I still focus exclusively on the police department. &nbsp;My primary
+            responsibilities are responding to help desk tickets and maintaining department computers.</p>
         </div>
       </div>
     </div>
@@ -284,10 +294,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script type="text/javascript">
-      window.controller = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({offset: 20}).setClassToggle(".dgw-nav", "dgw-nav-border").addTo(window.controller);
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script type="text/javascript">
+    function addClassToggle(o, a, b, c) {
+      new ScrollMagic.Scene({offset: o}).setClassToggle(a, b).addTo(c);
+    }
+
+    window.controller = new ScrollMagic.Controller();
+    addClassToggle(20, ".dgw-nav", "dgw-nav-border", window.controller);
+    addClassToggle(800, ".dgw-nav-name", "dgw-opacity-0", window.controller);
+    addClassToggle(800, ".dgw-nav-code", "dgw-opacity-1", window.controller);
   </script>
 
 </body>

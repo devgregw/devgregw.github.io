@@ -36,6 +36,24 @@
   font-size: x-large;
 }
 
+.dgw-nav-name {
+  transition: 100ms linear opacity;
+  opacity: 1;
+}
+
+.dgw-nav-code {
+  transition: 100ms linear opacity;
+  opacity: 0;
+}
+
+.dgw-opacity-1 {
+  opacity: 1 !important;
+}
+
+.dgw-opacity-0 {
+  opacity: 0 !important;
+}
+
 .dgw-intro {
   width: 100%;
   padding: 2rem;
