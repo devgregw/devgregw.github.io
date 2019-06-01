@@ -15,8 +15,11 @@
 
 <body>
   <div class="dgw-nav fixed-top">
-    <h1 class="dgw-nav-name">Greg Whatley</h1>
-    <h1 class="dgw-nav-code fixed-top">
+    <h1 class="dgw-nav-primary">Greg Whatley</h1>
+    <h1 id="nav-work" class="dgw-nav-secondary fixed-top">Work Experience</h1>
+    <h1 id="nav-tech" class="dgw-nav-secondary fixed-top">Technical Experience</h1>
+    <h1 id="nav-port" class="dgw-nav-secondary fixed-top">Portfolio</h1>
+    <h1 id="nav-contact" class="dgw-nav-secondary fixed-top">
       <code>
         <span style="color:#c678dd">var</span>
         <span style="color:#61aad7">greeting</span>
@@ -69,7 +72,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-1 text-center section-header">Work Experience</h1>
+          <h1 id="work-header" class="display-1 text-center section-header">Work Experience</h1>
           <p class="lead text-center text-light">Between 2013 and 2018, I volunteered at <a href="https://pantego.org"
               target="_blank" rel="noopener noreferrer">Pantego Bible Church</a> as a student leader and primarily
             helped with the media team for the youth ministry. &nbsp;In 2018, I began volunteering as a team leader for
@@ -89,7 +92,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-1 text-center section-header">Technical Experience</h1>
+          <h1 id="tech-header" class="display-1 text-center section-header">Technical Experience</h1>
         </div>
       </div>
       <div class="row">
@@ -180,7 +183,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-1 text-center section-header">Portfolio</h1>
+          <h1 id="portfolio-header" class="display-1 text-center section-header">Portfolio</h1>
         </div>
       </div>
       <div class="row">
@@ -265,7 +268,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-1 text-center">Contact</h1>
+          <h1 id="contact-header" class="display-1 text-center">Contact</h1>
           <h2 class="text-center">I'd be happy to hear from you.</h1>
             <div class="btn-group d-inline-flex btn-group-lg justify-content-center w-100">
               <a href="mailto:me@gregwhatley.dev" class="btn btn-secondary">Email</a>
@@ -297,13 +300,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script type="text/javascript">
     function addClassToggle(o, a, b, c) {
-      new ScrollMagic.Scene({offset: o}).setClassToggle(a, b).addTo(c);
+      new ScrollMagic.Scene(o).setClassToggle(a, b).addTo(c);
     }
 
     window.controller = new ScrollMagic.Controller();
-    addClassToggle(20, ".dgw-nav", "dgw-nav-border", window.controller);
-    addClassToggle(800, ".dgw-nav-name", "dgw-opacity-0", window.controller);
-    addClassToggle(800, ".dgw-nav-code", "dgw-opacity-1", window.controller);
+    addClassToggle({offset: 20}, ".dgw-nav", "dgw-nav-border", window.controller);
+
+    addClassToggle({triggerElement: "#work-header"}, ".dgw-nav-primary", "dgw-opacity-0", window.controller);
+    addClassToggle({triggerElement: "#work-header"}, "#nav-work", "dgw-opacity-1", window.controller);
+
+    addClassToggle({triggerElement: "#tech-header"}, "#nav-work", "dgw-opacity-0", window.controller);
+    addClassToggle({triggerElement: "#tech-header"}, "#nav-tech", "dgw-opacity-1", window.controller);
+
+    addClassToggle({triggerElement: "#portfolio-header"}, "#nav-tech", "dgw-opacity-0", window.controller);
+    addClassToggle({triggerElement: "#portfolio-header"}, "#nav-port", "dgw-opacity-1", window.controller);
+
+    addClassToggle({triggerElement: "#contact-header"}, "#nav-port", "dgw-opacity-0", window.controller);
+    addClassToggle({triggerElement: "#contact-header"}, "#nav-contact", "dgw-opacity-1", window.controller);
   </script>
 
 </body>

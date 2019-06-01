@@ -36,21 +36,25 @@
   font-size: x-large;
 }
 
-.dgw-nav-name {
-  transition: 100ms linear opacity;
+.dgw-nav-primary {
+  transition: 100ms linear all;
+  transform: translateY(0px);
   opacity: 1;
 }
 
-.dgw-nav-code {
-  transition: 100ms linear opacity;
+.dgw-nav-secondary {
+  transition: 100ms linear all;
+  transform: translateY(20px);
   opacity: 0;
 }
 
 .dgw-opacity-1 {
+  transform: translateY(0px) !important;
   opacity: 1 !important;
 }
 
 .dgw-opacity-0 {
+  transform: translateY(-20px) !important;
   opacity: 0 !important;
 }
 
