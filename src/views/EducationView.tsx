@@ -13,7 +13,7 @@ export default function EducationView() {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot>
-                        <Avatar src="https://cdn.web.uta.edu/-/media/project/website/general/uta-link-preview.ashx?revision=aa44075d-8f8c-4c1e-a916-b3d1ebc1449e" />
+                        <Avatar src="/img/uta.jpeg" />
                     </TimelineDot>
                 </TimelineSeparator>
                 <TimelineContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', paddingTop: '25px' }}>
