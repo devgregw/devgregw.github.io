@@ -64,66 +64,6 @@ const activeProducts: PortfolioProduct[] = [
         technologies: ['React', 'TypeScript', 'Node', 'CouchDB']
     },
     {
-        name: 'Authentic',
-        description: 'I developed Android and iOS apps (plus a web CMS) in collaboration with Authentic City Church. They are designed to keep people engaged, involved, and updated throughout the week with everything happening at Authentic.',
-        image: '/img/acc.png',
-        technologies: ['React', 'JavaScript', 'Firebase', 'iOS (Swift, UIKit)', 'Android (Kotlin)'],
-        firstAction: {
-            menu: 'Get',
-            Icon: GetApp,
-            items: [
-                {
-                    label: 'iOS',
-                    Icon: Apple,
-                    href: "https://itunes.apple.com/us/app/authentic-city-church/id1402645724?ls=1&mt=8",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                },
-                {
-                    label: 'Android',
-                    Icon: Android,
-                    href: "https://play.google.com/store/apps/details?id=church.authenticcity.android",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                }
-            ]
-        },
-        secondAction: {
-            button: 'Website',
-            EndIcon: OpenInNew,
-            href: "https://authentic.church",
-            target: "_blank",
-            rel: "noopener noreferrer"
-        },
-        moreActions: [
-            {
-                header: true,
-                label: 'Code'
-            },
-            {
-                label: 'iOS',
-                Icon: Apple,
-                href: "https://github.com/devgregw/AuthenticiOS",
-                target: "_blank",
-                rel: "noopener noreferrer"
-            },
-            {
-                label: 'Android',
-                Icon: Android,
-                href: "https://github.com/devgregw/AuthenticAndroid",
-                target: "_blank",
-                rel: "noopener noreferrer"
-            },
-            {
-                label: 'Web CMS',
-                Icon: Language,
-                href: "https://github.com/devgregw/authentic-management",
-                target: "_blank",
-                rel: "noopener noreferrer"
-            }
-        ]
-    },
-    {
         name: 'StrikeDistance',
         description: 'StrikeDistance was the first app I developed. It is a calculator that determines the distance between you and a lightning strike, given the current temperature and the time between the lightning and thunder. It was originally writted with C# for the Windows Phone platform, but I\'ve since rewritten it as a React web app.',
         image: '/img/strikedistance.png',
@@ -183,6 +123,67 @@ const projectProducts: PortfolioProduct[] = [
 ]
 
 const retiredProducts: PortfolioProduct[] = [
+
+    {
+        name: 'Authentic',
+        description: 'I developed Android and iOS apps (plus a web CMS) in collaboration with Authentic City Church.',
+        image: '/img/acc.png',
+        technologies: ['React', 'JavaScript', 'Firebase', 'iOS (Swift, UIKit)', 'Android (Kotlin)'],
+        firstAction: {
+            menu: 'Get',
+            Icon: GetApp,
+            items: [
+                {
+                    label: 'iOS',
+                    Icon: Apple,
+                    href: "https://itunes.apple.com/us/app/authentic-city-church/id1402645724?ls=1&mt=8",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                },
+                {
+                    label: 'Android',
+                    Icon: Android,
+                    href: "https://play.google.com/store/apps/details?id=church.authenticcity.android",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                }
+            ]
+        },
+        secondAction: {
+            button: 'Website',
+            EndIcon: OpenInNew,
+            href: "https://authentic.church",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        },
+        moreActions: [
+            {
+                header: true,
+                label: 'Code Archives'
+            },
+            {
+                label: 'iOS',
+                Icon: Apple,
+                href: "https://github.com/devgregw/AuthenticiOS",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            },
+            {
+                label: 'Android',
+                Icon: Android,
+                href: "https://github.com/devgregw/AuthenticAndroid",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            },
+            {
+                label: 'Web CMS',
+                Icon: Language,
+                href: "https://github.com/devgregw/authentic-management",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            }
+        ]
+    },
     {
         name: 'Merge',
         image: '/img/merge.png',

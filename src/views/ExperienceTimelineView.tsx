@@ -55,7 +55,7 @@ function ExperienceItem(props: { item: Experience, last?: boolean }) {
                 <DialogTitle>
                     <Stack direction="row">
                         <Avatar src={props.item.logoUrl} sx={{ marginRight: 1 }} />
-                        Experience Details
+                        {props.item.companyName}
                     </Stack>
                 </DialogTitle>
                 <DialogContent dividers>

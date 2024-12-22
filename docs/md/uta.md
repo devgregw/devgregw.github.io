@@ -32,11 +32,11 @@ Skills:
 ## More Information
 
 <figure>
-<img src="https://police.uta.edu/_images/elements/police-logo.png" height="75" alt="UT Arlington Polcie Department">
+<img src="/img/uta-logo-new.png" height="75" alt="UT Arlington Polcie Department">
 <figcaption><a href="https://police.uta.edu" target="blank" rel="noopener noreferrer" style="color: white;">UTA Police Department</a></figcaption>
 </figure>
 
 <figure>
-<img style="max-width: 100%;max-height:100px;background:white;border-radius:1rem" src="https://www.utsystem.edu/themes/custom/utsys/images/svg/logo.svg" alt="University of Texas System">
+<img style="max-width: 100%;max-height:60px;background:white;border-radius:1rem" src="/img/uts-logo-primary-web-0923.svg" alt="University of Texas System">
 <figcaption><a href="https://www.utsystem.edu" target="blank" rel="noopener noreferrer" style="color: white;">University of Texas System</a></figcaption>
 </figure>
