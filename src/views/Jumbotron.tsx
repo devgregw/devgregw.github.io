@@ -13,7 +13,7 @@ export default function Jumbotron() {
                     <Mono className="term" sx={{ fontSize: 18 }}>Software Engineer</Mono>
                 </Grid>
                 <Grid size={{xs: 12, sm: 6}} sx={{ padding: 4 }}>
-                    <img src='/img/me.png' style={{ width: '100%', borderRadius: '0 0 50% 50%' }} />
+                    <img src='/img/me.png' style={{ width: '100%', borderRadius: '0 0 50% 50%' }} alt='My headshot' />
                 </Grid>
             </Grid>
             <Fade in={!trigger}>
