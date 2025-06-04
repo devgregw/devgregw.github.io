@@ -7,13 +7,13 @@ export default function Jumbotron() {
     return (
         <Container id="jumbotron" sx={t => ({[t.breakpoints.down('sm')]: {marginTop: 4}})}>
             <Grid container spacing={0}>
-                <Grid item xs={12} sm={6} sx={t => ({ [t.breakpoints.up('sm')]: { textAlign: 'start', paddingBottom: 4 }, display: 'flex', flexDirection: 'column', justifyContent: 'end' })}>
+                <Grid size={{xs: 12, sm: 6}} sx={t => ({ [t.breakpoints.up('sm')]: { textAlign: 'start', paddingBottom: 4 }, display: 'flex', flexDirection: 'column', justifyContent: 'end' })}>
                     <Typography sx={{ fontSize: 22 }}>Hello, I'm</Typography>
                     <Glitch gradient sx={{ fontSize: 'calc(min(10vw, 120px))' }}>Greg<br />Whatley</Glitch>
                     <Mono className="term" sx={{ fontSize: 18 }}>Software Engineer</Mono>
                 </Grid>
-                <Grid item xs={12} sm={6} sx={{ padding: 4 }}>
-                    <img src='/img/me.png' style={{ width: '100%', borderRadius: '0 0 50% 50%' }} />
+                <Grid size={{xs: 12, sm: 6}} sx={{ padding: 4 }}>
+                    <img src='/img/me.png' style={{ width: '100%', borderRadius: '0 0 50% 50%' }} alt='My headshot' />
                 </Grid>
             </Grid>
             <Fade in={!trigger}>
