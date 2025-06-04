@@ -3,8 +3,8 @@ import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem
 import { Avatar, Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Divider, Grow, IconButton, Skeleton, Stack, Tooltip, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 type Experience = {
     companyName: string,

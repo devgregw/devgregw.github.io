@@ -1,6 +1,5 @@
 import { Box, Typography, AppBar, Tabs, Tab, useTheme, Grid } from "@mui/material";
 import { useState, SyntheticEvent } from "react";
-import SwipeableViews from "react-swipeable-views";
 import { products } from "../util/Products";
 import useSize from "../util/useSize";
 import PortfolioCard from "./PortfolioCard";
@@ -47,10 +46,6 @@ export default function PortfolioTabView() {
     const handleChange = (event: SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
-
-    const handleChangeIndex = (index: number) => {
-        setValue(index);
-    };
     return <>
         <Typography variant="h2">Portfolio</Typography>
         <Box sx={{ borderRadius: '1rem', bgcolor: 'background.paper', minHeight: firstTabSize ? `${firstTabSize.height + 150}px` : 'unset' }}>
@@ -67,19 +62,13 @@ export default function PortfolioTabView() {
                     {products.map((c, i) => <Tab key={c.name} icon={c.icon} label={c.name} {...a11yProps(i)} sx={t => ({ borderRadius: '1rem 1rem 0 0', [t.breakpoints.down('sm')]: { fontSize: 'small' } })} />)}
                 </Tabs>
             </AppBar>
-            <SwipeableViews
-                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-            >
-                {products.map((c, i) => <>
-                    <TabPanel key={c.name} value={value} index={i} dir={theme.direction}>
-                        <Grid sx={{textAlign: 'left'}} container spacing={4}>
-                            {c.products.map(p => <Grid key={p.name} xs={12} sm={6} md={4} item><PortfolioCard product={p}/></Grid>)}
-                        </Grid>
-                    </TabPanel>
-                </>)}
-            </SwipeableViews>
+            {products.map((c, i) => <>
+                <TabPanel key={c.name} value={value} index={i} dir={theme.direction}>
+                    <Grid sx={{ textAlign: 'left' }} container spacing={4}>
+                        {c.products.map(p => <Grid key={p.name} size={{xs: 12, sm: 6, md: 4}}><PortfolioCard product={p} /></Grid>)}
+                    </Grid>
+                </TabPanel>
+            </>)}
         </Box>
     </>
 }

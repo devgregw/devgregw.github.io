@@ -1,12 +1,7 @@
 import { ApiRounded, ComputerTwoTone, DataObjectRounded, WidgetsRounded } from "@mui/icons-material";
 import { Box, Typography, AppBar, Tabs, Tab, useTheme, Grid, Paper } from "@mui/material";
 import { useState, SyntheticEvent, ReactElement, type JSXElementConstructor } from "react";
-import SwipeableViews from "react-swipeable-views";
 import useSize from "../util/useSize";
-
-type Skill = {
-    name: string
-}
 
 type SkillCollection = {
     name: string,
@@ -106,10 +101,6 @@ export default function SkillsTabView() {
     const handleChange = (event: SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
-
-    const handleChangeIndex = (index: number) => {
-        setValue(index);
-    };
     return <>
         <Typography variant="h2">Skills</Typography>
         <Box sx={{ borderRadius: '1rem', bgcolor: 'background.paper', minHeight: firstTabSize ? `${firstTabSize.height + 150}px` : 'unset' }}>
@@ -126,19 +117,13 @@ export default function SkillsTabView() {
                     {skills.map((c, i) => <Tab key={c.name} icon={c.icon} label={c.name} {...a11yProps(i)} sx={t => ({ borderRadius: '1rem 1rem 0 0', [t.breakpoints.down('sm')]: {fontSize: 'small'}})}/>)}
                 </Tabs>
             </AppBar>
-            <SwipeableViews
-                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-            >
-                {skills.map((c, i) => <>
-                    <TabPanel key={c.name} value={value} index={i} dir={theme.direction}>
-                        <Grid container spacing={4}>
-                            {c.skills.map(s => <Grid key={s} xs={6} md={4} lg={3} item><Paper elevation={8} sx={{paddingY: 1, paddingX: 2, borderRadius: '1000px'}}><Typography variant="body1">{s}</Typography></Paper></Grid>)}
-                        </Grid>
-                    </TabPanel>
-                </>)}
-            </SwipeableViews>
+            {skills.map((c, i) => <>
+                <TabPanel key={c.name} value={value} index={i} dir={theme.direction}>
+                    <Grid container spacing={4}>
+                        {c.skills.map(s => <Grid key={s} size={{xs: 6, md: 4, lg: 3}}><Paper elevation={8} sx={{ paddingY: 1, paddingX: 2, borderRadius: '1000px' }}><Typography variant="body1">{s}</Typography></Paper></Grid>)}
+                    </Grid>
+                </TabPanel>
+            </>)}
         </Box>
     </>
 }

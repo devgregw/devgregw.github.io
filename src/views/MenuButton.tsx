@@ -1,8 +1,8 @@
 import { Button, type ButtonProps, Menu, IconButton } from "@mui/material";
-import { useState, MouseEvent, ReactElement } from "react";
+import { useState, MouseEvent, ReactNode } from "react";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-type BaseProps = { children: (close: () => void) => ReactElement | JSX.Element | JSX.Element[], color?: Color}
+type BaseProps = { children: (close: () => void) => ReactNode, color?: Color}
 type MenuButtonProps = {label: string, ButtonProps?: ButtonProps}
 type IconButtonProps = {icon: true, ButtonProps?: Omit<ButtonProps, 'endIcon' | 'startIcon'>}
 type Color = "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning"
