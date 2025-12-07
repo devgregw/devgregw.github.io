@@ -14,18 +14,17 @@ const skills: SkillCollection[] = [
         name: "Software",
         icon: <WidgetsRounded sx={{width: 32, height: 32}}/>,
         skills: [
-            "Visual Studio",
+            "Xcode",
             "Visual Studio Code",
             "Android Studio",
-            "Xcode",
             "App Store Connect",
             "Google Play",
             "Microsoft Office",
+            "Jira",
+            "Confluence",
             "GitHub",
-            "BitBucket",
             "CocoaPods",
             "VirtualBox",
-            "NetBeans",
             "Adobe LiveCycle Designer"
         ]
     },
@@ -40,7 +39,7 @@ const skills: SkillCollection[] = [
         name: "Frameworks",
         icon: <ApiRounded sx={{width: 32, height: 32}}/>,
         skills: [
-            "React", "Firebase", ".NET", "Angular", "Bootstrap", "Xamarin", "WPF"
+            "SwiftUI", "React", "NextJS", "GitHub Actions", "Firebase", ".NET", "Angular", "Bootstrap", "Xamarin", "WPF"
         ]
     },
     {

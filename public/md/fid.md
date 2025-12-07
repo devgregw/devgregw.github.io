@@ -1,7 +1,21 @@
-## Mobile Developer
-*Jul 2022 - ***Present****
+## Senior Mobile Developer
+*Jan 2026 - ***Present****
 
-Following the completion of LEAP, I moved into the Brokerage & Digital Experience Technology chapter within the Personal Investing business unit. Specializing in iOS development with Swift and SwiftUI, I help develop research features for Fidelity’s flagship mobile app, such as market news, futures, indices, and quotes.
+A a tech lead for my team, I continue to contribute to research tools on the Fidelity mobile app; however, I'm taking on additional responsibility and developing common features that can be reused by other teams. I am also involved in interviewing prospective interns and LEAP candidates.
+
+Skills:
+* Jira
+* GitHub
+* Swift
+* iOS
+* SwiftUI
+
+---
+
+## Mobile Developer
+*Jul 2022 - Dec 2025*
+
+Following the completion of LEAP, I moved into the Brokerage & Digital Experience Technology chapter within the Personal Investing business unit. Specializing in iOS development with Swift and SwiftUI, I helped develop research features for Fidelity’s flagship mobile app, such as market news, futures, indices, and quotes.
 
 Skills:
 * Scrum

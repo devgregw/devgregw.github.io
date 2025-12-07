@@ -54,6 +54,48 @@ type PortfolioCollection = {
 
 const activeProducts: PortfolioProduct[] = [
     {
+        name: 'Redzone',
+        description: 'Redzone pulls publicly available convective (severe weather) outlook data from the National Weather Service\'s Storm Prediction Center and displays it on an interactive map. When location services are enabled, any outlook covering the user\'s location is highlighted. The iOS app is built with Swift/SwiftUI and MapKit. NextJS, through Firebase App Hosting, powers the web app and API layer. Firebase Realtime Database serves as a cache for fresh data to avoid repetitive requests to the SPC, and Cloud Functions routinely clears out stale data.',
+        image: '/img/redzone.png',
+        technologies: ['SwiftUI', 'NextJS', 'Firebase', 'MapKit'],
+        firstAction: {
+            menu: 'Try',
+            Icon: GetApp,
+            items: [
+                {
+                    label: 'Web',
+                    Icon: Language,
+                    href: "https://redzone.gregwhatley.dev",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                },
+                {
+                    label: 'iOS (TestFlight)',
+                    Icon: Apple,
+                    href: "https://testflight.apple.com/join/xvXrMetk",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                }
+            ]
+        },
+        secondAction: {
+            button: 'Code',
+            EndIcon: GitHub,
+            href: "https://github.com/devgregw/Redzone",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        },
+        moreActions: [
+            {
+                label: 'Storm Prediction Center',
+                Icon: Language,
+                href: "https://spc.noaa.gov",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            }
+        ]
+    },
+    {
         name: 'PD Fleet Live',
         sx: {
             background: 'linear-gradient(135deg, #003399, #ff3333)'
@@ -71,17 +113,70 @@ const activeProducts: PortfolioProduct[] = [
         firstAction: {
             button: 'Try',
             EndIcon: OpenInNew,
-            href: "https://gregwhatley.dev/strikedistance-web",
+            href: "https://gregwhatley.dev/StrikeDistance",
             target: "_blank",
             rel: "noopener noreferrer"
         },
         secondAction: {
             button: 'Code',
             EndIcon: GitHub,
-            href: "https://github.com/devgregw/strikedistance-web",
+            href: "https://github.com/devgregw/StrikeDistance",
             target: "_blank",
             rel: "noopener noreferrer"
         }
+    },
+    {
+        name: 'swift-geojson',
+        nameChip: 'Utility',
+        technologies: ['Swift', "Swift Package Manager"],
+        image: 'https://avatars.githubusercontent.com/u/42816656?s=200&v=4',
+        sx: {
+            background: 'white',
+            objectFit: 'scale-down'
+        },
+        description: 'swift-geojson is a simplistic GeoJSON parser, implemented as a subclass of JSONDecoder, written in Swift. The Redzone iOS app includes swift-geojson as a dependency.',
+        firstAction: {
+            button: 'Code',
+            EndIcon: GitHub,
+            href: "https://github.com/devgregw/swift-geojson",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        }
+    },
+    {
+        name: 'Alvin Tree Service',
+        nameChip: 'Internal',
+        description: 'I developed a simple job management app for ATS to help them manage bids, active jobs, and completed work. Features include a public estimate request form, photo uploads, equipment checklist, and scheduler.',
+        image: '/img/ats.png',
+        technologies: ['React', 'TypeScript', 'Firebase', 'MUI', 'Fuse']
+    },
+    {
+        name: 'On Time Couriers',
+        nameChip: 'Internal',
+        description: 'I developed a new website and driver app for On Time Couriers, a longstanding family-owned courier service based in Dallas.',
+        image: '/img/otc.png',
+        technologies: ['React', 'Firebase', 'MUI', 'PostHTML'],
+        sx: {
+            background: 'white',
+            objectFit: 'scale-down',
+            aspectRatio: 1
+        },
+        firstAction: {
+            button: 'Website',
+            EndIcon: Language,
+            href: "https://ontimecouriers.com",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        },
+        moreActions: [
+            {
+                label: 'Source Code',
+                Icon: GitHub,
+                href: "https://github.com/devgregw/on-time-web",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            }
+        ]
     },
     {
         name: 'upload-symbols.sh',
@@ -130,26 +225,6 @@ const retiredProducts: PortfolioProduct[] = [
         image: '/img/acc.png',
         technologies: ['React', 'JavaScript', 'Firebase', 'iOS (Swift, UIKit)', 'Android (Kotlin)'],
         firstAction: {
-            menu: 'Get',
-            Icon: GetApp,
-            items: [
-                {
-                    label: 'iOS',
-                    Icon: Apple,
-                    href: "https://itunes.apple.com/us/app/authentic-city-church/id1402645724?ls=1&mt=8",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                },
-                {
-                    label: 'Android',
-                    Icon: Android,
-                    href: "https://play.google.com/store/apps/details?id=church.authenticcity.android",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                }
-            ]
-        },
-        secondAction: {
             button: 'Website',
             EndIcon: OpenInNew,
             href: "https://authentic.church",
