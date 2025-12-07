@@ -172,26 +172,6 @@ const retiredProducts: PortfolioProduct[] = [
         image: '/img/acc.png',
         technologies: ['React', 'JavaScript', 'Firebase', 'iOS (Swift, UIKit)', 'Android (Kotlin)'],
         firstAction: {
-            menu: 'Get',
-            Icon: GetApp,
-            items: [
-                {
-                    label: 'iOS',
-                    Icon: Apple,
-                    href: "https://itunes.apple.com/us/app/authentic-city-church/id1402645724?ls=1&mt=8",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                },
-                {
-                    label: 'Android',
-                    Icon: Android,
-                    href: "https://play.google.com/store/apps/details?id=church.authenticcity.android",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                }
-            ]
-        },
-        secondAction: {
             button: 'Website',
             EndIcon: OpenInNew,
             href: "https://authentic.church",
