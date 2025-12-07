@@ -81,7 +81,8 @@ const experienceItems: Experience[] = [
         logoUrl: "/img/fidelity.jpeg",
         url: "https://fidelity.com",
         titles: [
-            { title: "Mobile Developer", start: "Jul 2022" },
+            { title: "Senior Mobile Developer", start: "Jan 2026" },
+            { title: "Mobile Developer", start: "Jul 2022", end: "Dec 2025" },
             { title: "Associate Software Engineer", start: "Jun 2022", end: "Jul 2022" }
         ],
         infoUrl: 'md/fid.md'
