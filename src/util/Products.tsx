@@ -71,14 +71,14 @@ const activeProducts: PortfolioProduct[] = [
         firstAction: {
             button: 'Try',
             EndIcon: OpenInNew,
-            href: "https://gregwhatley.dev/strikedistance-web",
+            href: "https://gregwhatley.dev/StrikeDistance",
             target: "_blank",
             rel: "noopener noreferrer"
         },
         secondAction: {
             button: 'Code',
             EndIcon: GitHub,
-            href: "https://github.com/devgregw/strikedistance-web",
+            href: "https://github.com/devgregw/StrikeDistance",
             target: "_blank",
             rel: "noopener noreferrer"
         }
