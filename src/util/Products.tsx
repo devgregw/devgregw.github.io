@@ -54,6 +54,48 @@ type PortfolioCollection = {
 
 const activeProducts: PortfolioProduct[] = [
     {
+        name: 'Redzone',
+        description: 'Redzone pulls publicly available convective (severe weather) outlook data from the National Weather Service\'s Storm Prediction Center and displays it on an interactive map. When location services are enabled, any outlook covering the user\'s location is highlighted. The iOS app is built with Swift/SwiftUI and MapKit. NextJS, through Firebase App Hosting, powers the web app and API layer. Firebase Realtime Database serves as a cache for fresh data to avoid repetitive requests to the SPC, and Cloud Functions routinely clears out stale data.',
+        image: '/img/redzone.png',
+        technologies: ['SwiftUI', 'NextJS', 'Firebase', 'MapKit'],
+        firstAction: {
+            menu: 'Try',
+            Icon: GetApp,
+            items: [
+                {
+                    label: 'Web',
+                    Icon: Language,
+                    href: "https://redzone.gregwhatley.dev",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                },
+                {
+                    label: 'iOS (TestFlight)',
+                    Icon: Apple,
+                    href: "https://testflight.apple.com/join/xvXrMetk",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                }
+            ]
+        },
+        secondAction: {
+            button: 'Code',
+            EndIcon: GitHub,
+            href: "https://github.com/devgregw/Redzone",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        },
+        moreActions: [
+            {
+                label: 'Storm Prediction Center',
+                Icon: Language,
+                href: "https://spc.noaa.gov",
+                target: "_blank",
+                rel: "noopener noreferrer"
+            }
+        ]
+    },
+    {
         name: 'PD Fleet Live',
         sx: {
             background: 'linear-gradient(135deg, #003399, #ff3333)'
