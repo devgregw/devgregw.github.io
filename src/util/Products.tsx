@@ -126,6 +126,24 @@ const activeProducts: PortfolioProduct[] = [
         }
     },
     {
+        name: 'swift-geojson',
+        nameChip: 'Utility',
+        technologies: ['Swift', "Swift Package Manager"],
+        image: 'https://avatars.githubusercontent.com/u/42816656?s=200&v=4',
+        sx: {
+            background: 'white',
+            objectFit: 'scale-down'
+        },
+        description: 'swift-geojson is a simplistic GeoJSON parser, implemented as a subclass of JSONDecoder, written in Swift. The Redzone iOS app includes swift-geojson as a dependency.',
+        firstAction: {
+            button: 'Code',
+            EndIcon: GitHub,
+            href: "https://github.com/devgregw/swift-geojson",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        }
+    },
+    {
         name: 'upload-symbols.sh',
         nameChip: 'Utility',
         technologies: ['Shell'],
