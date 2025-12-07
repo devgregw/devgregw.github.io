@@ -145,16 +145,10 @@ const activeProducts: PortfolioProduct[] = [
     },
     {
         name: 'Alvin Tree Service',
+        nameChip: 'Internal',
         description: 'I developed a simple job management app for ATS to help them manage bids, active jobs, and completed work. Features include a public estimate request form, photo uploads, equipment checklist, and scheduler.',
         image: '/img/ats.png',
-        technologies: ['React', 'TypeScript', 'Firebase', 'MUI', 'Fuse'],
-        firstAction: {
-            button: 'Code',
-            EndIcon: GitHub,
-            href: "https://github.com/devgregw/alvin-tree-service",
-            target: "_blank",
-            rel: "noopener noreferrer"
-        }
+        technologies: ['React', 'TypeScript', 'Firebase', 'MUI', 'Fuse']
     },
     {
         name: 'On Time Couriers',
