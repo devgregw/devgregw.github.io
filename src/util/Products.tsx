@@ -111,11 +111,24 @@ const activeProducts: PortfolioProduct[] = [
         image: '/img/strikedistance.png',
         technologies: ['React', 'TypeScript'],
         firstAction: {
-            button: 'Try',
-            EndIcon: OpenInNew,
-            href: "https://gregwhatley.dev/StrikeDistance",
-            target: "_blank",
-            rel: "noopener noreferrer"
+            menu: 'Try',
+            Icon: GetApp,
+            items: [
+                {
+                    label: "Web",
+                    Icon: Language,
+                    href: "https://gregwhatley.dev/StrikeDistance",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                },
+                {
+                    label: "Android",
+                    Icon: Android,
+                    href: "https://play.google.com/store/apps/details?id=dev.gregwhatley.strikedistance",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                }
+            ]
         },
         secondAction: {
             button: 'Code',
